@@ -41,7 +41,7 @@ if(NOT DEFINED $ENV{DISABLE_DEBUGGING})  # MATCHES
   set(USBCDC_DEBUGGING 0)     # Enable debugging over cdc port 2
   set(MEMORY_LOGGING 0)       # Enable memory map of SID 1 voices printing
   set(DEFAULT_DEBUGGING 1)    # Enable debugging in usbsid.c
-  set(USBIO_DEBUGGING 0)      # Enable debugging in usbsid.c
+  set(USBIO_DEBUGGING 1)      # Enable debugging in usbsid.c
   set(CONFIG_DEBUGGING 1)     # Enable debugging in config.c
   set(GPIOBUS_DEBUGGING 0)    # Enable debugging in gpio.c
   set(MIDI_DEBUGGING 0)       # Enable debugging in midi.c
