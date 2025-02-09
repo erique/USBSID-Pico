@@ -43,7 +43,7 @@ if(NOT DEFINED $ENV{DISABLE_DEBUGGING})  # MATCHES
   set(DEFAULT_DEBUGGING 1)    # Enable debugging in usbsid.c
   set(USBIO_DEBUGGING 1)      # Enable debugging in usbsid.c
   set(CONFIG_DEBUGGING 1)     # Enable debugging in config.c
-  set(GPIOBUS_DEBUGGING 0)    # Enable debugging in gpio.c
+  set(GPIOBUS_DEBUGGING 1)    # Enable debugging in gpio.c
   set(MIDI_DEBUGGING 0)       # Enable debugging in midi.c
   set(MIDIVOICE_DEBUGGING 0)  # Enable debugging in midi.c
 endif()

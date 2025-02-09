@@ -297,6 +297,7 @@ void __not_in_flash_func(handle_buffer_task)(uint8_t * itf, uint32_t * n)
     return;
   };
   if (command == READ) {  /* READING CAN ONLY HANDLE ONE AT A TIME, PERIOD. */
+    IODBG("[R] [%c] $%02X:%02X\n", dtype, sid_buffer[1], sid_buffer[2]);
     write_buffer[0] = bus_operation((0x10 | READ), sid_buffer[1], sid_buffer[2]);  /* write the address to the SID and read the data back */
     switch (dtype) {  /* write the result to the USB client */
       case 'C':
